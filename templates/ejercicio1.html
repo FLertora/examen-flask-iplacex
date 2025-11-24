@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculo de compras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container-card">
+    <div class="card-title">Calculo de compras</div>
+
+    <form method="POST">
+        <div class="label-top">Ingresa tu nombre</div>
+        <input type="text" name="nombre" class="form-input" required>
+
+        <div class="label-top">Ingresa tu edad</div>
+        <input type="number" name="edad" class="form-input" required>
+
+        <div class="label-top">Ingresa la cantidad de tarros de pintura a comprar</div>
+        <input type="number" name="cantidad" class="form-input" required>
+
+        <div class="text-center" style="margin-top: 10px;">
+            <button type="submit" class="btn-primary-custom">Calcular</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

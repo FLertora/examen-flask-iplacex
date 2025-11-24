@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado compra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container-card">
+    <div class="card-title">Calculo de compras</div>
+
+    <p><strong>Nombre del cliente:</strong> {{ nombre }}</p>
+    <p><strong>Total sin descuento:</strong> ${{ total_sin_descuento }}</p>
+    <p><strong>El descuento es :</strong> ${{ monto_descuento }}</p>
+    <p><strong>El total a pagar es de :</strong> ${{ total_pagar }}</p>
+
+    <div class="text-center" style="margin-top: 20px;">
+        <a href="{{ url_for('ejercicio1') }}" class="btn-primary-custom">Volver</a>
+    </div>
+</div>
+
+</body>
+</html>
